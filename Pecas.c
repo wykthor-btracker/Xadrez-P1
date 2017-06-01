@@ -4,10 +4,11 @@
 #include "Tabuleiro.h"
 #define DEBUG if(0)
 
-pontPeca initPeca(int *pos, char *nome, char *imagem,refTabuleiro pai)
+pontPeca initPeca(int px,int py, char *nome, char *imagem,refTabuleiro pai)
 {
 	pontPeca new = malloc(sizeof(peca));
-	new->pos = pos;
+	new->posX = px;
+	new->posY = py;
 	new->Nome = malloc(sizeof(char)*10);
 	strcpy(new->Nome,nome);
 	new->Imagem = malloc(sizeof(char)*100);

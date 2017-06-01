@@ -8,12 +8,12 @@ typedef struct peca *pontPeca;
 
 struct peca
 {
-	int *pos;
+	int posX,posY;
 	char *Nome;
 	char *Imagem;
 	//Sons.
 	refTabuleiro pai;
 };
 
-pontPeca initPeca(int *pos, char *nome, char *imagem,refTabuleiro pai);
+pontPeca initPeca(int posX,int posY, char *nome, char *imagem, refTabuleiro pai);
 	
